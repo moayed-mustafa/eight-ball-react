@@ -25,7 +25,7 @@ const EightBall = ({ answers }) => {
     return (
         <>
             <div className='eight-ball'>
-                <div onClick={Answer}className='eight-ball-circle' id={answer.color}>
+                <div onClick={Answer}className='eight-ball-circle' id={answer.color} data-testid= "circle">
                     <p >{answer.msg}</p>
                 </div>
             </div>
