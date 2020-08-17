@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="eight-ball"
+  >
+    <div
+      class="eight-ball-circle"
+      id="black"
+    >
+      <p>
+        Think of a question
+      </p>
+    </div>
+  </div>
+  <div>
+    <button>
+      Reset
+    </button>
+    <p>
+      positive: 0
+    </p>
+    <p>
+      negative : 0
+    </p>
+    <p>
+      undecisive : 0
+    </p>
+  </div>
+</DocumentFragment>
+`;

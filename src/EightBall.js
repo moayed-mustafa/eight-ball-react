@@ -4,17 +4,13 @@ import Eightball from './Eightball.css'
 
 const EightBall = ({ answers }) => {
 
-    const eve = () => {
+    const Answer = () => {
         // here is where the state is changed
         let rand = Math.floor(Math.random() * answers.length)
         setAnswer(answers[rand])
-        if (answers[rand].color == 'green')  setPositive(positive + 1)
-        else if (answers[rand].color == 'red') setNegative(negative + 1)
+        if (answers[rand].color === 'green')  setPositive(positive + 1)
+        else if (answers[rand].color === 'red') setNegative(negative + 1)
         else setunDecisive(undecisive + 1)
-
-
-
-
     }
     const reset = () => {
         setAnswer({ msg: 'Think of a question', color: "black" })
@@ -28,19 +24,19 @@ const EightBall = ({ answers }) => {
     const [undecisive, setunDecisive] = useState(0)
     return (
         <>
-        <div className='eight-ball'>
-            <div onClick={eve}className='eight-ball-circle' id={answer.color}>
-                <p >{answer.msg}</p>
+            <div className='eight-ball'>
+                <div onClick={Answer}className='eight-ball-circle' id={answer.color}>
+                    <p >{answer.msg}</p>
+                </div>
             </div>
-            </div>
-            <div>
-        <button onClick={reset}>Reset</button>
-                <p >positive: {positive}</p>
-        <p >negative : {negative}</p>
-        <p >undecisive : {undecisive}</p>
+                <div>
+                    <button onClick={reset}>Reset</button>
+                    <p >positive: {positive}</p>
+                    <p >negative : {negative}</p>
+                    <p >undecisive : {undecisive}</p>
 
-            </div>
-            </>
+                </div>
+        </>
     )
 
 }
