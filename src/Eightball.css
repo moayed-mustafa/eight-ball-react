@@ -1,0 +1,43 @@
+.eight-ball{
+    display: flex;
+    justify-content: center;
+    align-items:center
+
+}
+.eight-ball-circle{
+    margin: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center
+
+}
+#black{
+    background: black;
+    width: 200px;
+    height: 200px;
+    border: 3px solid ;
+    color: white
+
+}
+#green{
+    background: green;
+    width: 200px;
+    height: 200px;
+    border: 3px solid ;
+    color: white
+}
+#red{
+    background: red;
+    width: 200px;
+    height: 200px;
+    border: 3px solid ;
+    color: white
+}
+#goldenrod{
+    background: goldenrod;
+    width: 200px;
+    height: 200px;
+    border: 3px solid ;
+    color: white
+}
